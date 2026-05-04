@@ -11,11 +11,11 @@ Create an interactive navigation menu that changes color or style when scrolled 
 
 ### 2. Scrolled State (After Scrolling Down)
 ![Scrolled State](scrolled-state.png)
-*Menu changes to RED after scrolling*
+*Menu changes to BLUE after scrolling*
 
 ### 3. Hover Effect
 ![Hover Effect](hover-state.png)
-*Menu item turns YELLOW when mouse hovers*
+*Menu item turns BLUE when mouse hovers*
 
 ### 4. Mobile Responsive View
 ![Mobile View](mobile-state.png)
