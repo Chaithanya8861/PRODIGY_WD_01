@@ -93,24 +93,26 @@
         }
 
         /* ========== FIXED NAVIGATION MENU ========== */
+        /* NORMAL STATE - Transparent/Dark with blur */
         .navbar {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             z-index: 1000;
-            background: rgba(8, 12, 28, 0.75);
+            background: rgba(8, 12, 28, 0.6);
             backdrop-filter: blur(12px);
             border-bottom: 1px solid rgba(0, 255, 255, 0.15);
             transition: all 0.4s ease;
             padding: 1rem 2rem;
         }
 
+        /* SCROLLED STATE - ENTIRE BAR CHANGES COLOR to deep purple/blue */
         .navbar.scrolled {
-            background: rgba(3, 6, 18, 0.95);
+            background: linear-gradient(135deg, #0f0c29, #1a1a3e, #0f0c29);
             backdrop-filter: blur(16px);
-            border-bottom: 1px solid rgba(0, 255, 255, 0.4);
-            box-shadow: 0 4px 30px rgba(0, 255, 255, 0.1);
+            border-bottom: 2px solid rgba(0, 255, 255, 0.6);
+            box-shadow: 0 8px 32px rgba(0, 255, 255, 0.2);
             padding: 0.7rem 2rem;
         }
 
@@ -122,6 +124,7 @@
             align-items: center;
         }
 
+        /* Logo also changes on scroll */
         .logo {
             font-size: 1.5rem;
             font-weight: 700;
@@ -131,6 +134,14 @@
             -webkit-background-clip: text;
             color: transparent;
             text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .navbar.scrolled .logo {
+            background: linear-gradient(135deg, #00ffff, #ff69b4, #ffffff);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
         }
 
         .logo span {
@@ -152,6 +163,11 @@
             transition: all 0.3s ease;
             position: relative;
             letter-spacing: 0.3px;
+        }
+
+        /* Menu text color changes on scroll */
+        .navbar.scrolled .nav-menu li a {
+            color: #ffffff;
         }
 
         /* HOVER EFFECT - Professional glow */
@@ -203,6 +219,10 @@
             background: #00ffff;
             transition: 0.3s;
             border-radius: 2px;
+        }
+
+        .navbar.scrolled .hamburger span {
+            background: #ffffff;
         }
 
         @media (max-width: 768px) {
@@ -571,7 +591,7 @@
     <div class="shooting-star"></div>
     <div class="shooting-star"></div>
 
-    <!-- Fixed Navigation Menu -->
+    <!-- Fixed Navigation Menu - ENTIRE BAR CHANGES COLOR ON SCROLL -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <a href="#home" class="logo">✨ PRODIGY <span>INFOTECH</span></a>
@@ -725,7 +745,11 @@
     <script>
         // ============================================
         // PROFESSIONAL INTERACTIVE NAVIGATION MENU
-        // Features: Fixed position | Scroll color change | Hover effect | Active highlight
+        // Features: 
+        // 1. Fixed position menu
+        // 2. ENTIRE BAR changes color when scrolled (gradient background)
+        // 3. Hover effect on menu items
+        // 4. Active menu highlights as you scroll
         // ============================================
 
         // DOM Elements
@@ -735,7 +759,7 @@
         const navLinks = document.querySelectorAll('.nav-link');
         const sections = document.querySelectorAll('section');
 
-        // 1. SCROLL EFFECT - Changes navbar background
+        // 1. SCROLL EFFECT - Changes ENTIRE NAVBAR BACKGROUND COLOR
         window.addEventListener('scroll', () => {
             if (window.scrollY > 50) {
                 navbar.classList.add('scrolled');
