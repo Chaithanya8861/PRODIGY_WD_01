@@ -3,6 +3,24 @@
 ## 📌 Task 01
 Create an interactive navigation menu that changes color or style when scrolled or when hovering over a menu item.
 
+## 📸 Screenshots
+
+### 1. Normal State (At Top of Page)
+![Normal State](normal-state.png)
+*Menu shows BLUE background at top of page*
+
+### 2. Scrolled State (After Scrolling Down)
+![Scrolled State](scrolled-state.png)
+*Menu changes to RED after scrolling*
+
+### 3. Hover Effect
+![Hover Effect](hover-state.png)
+*Menu item turns YELLOW when mouse hovers*
+
+### 4. Mobile Responsive View
+![Mobile View](mobile-state.png)
+*Hamburger menu on mobile devices*
+
 ## ✅ Features Implemented
 - **Fixed Position** - Menu stays visible on all sections
 - **Scroll Effect** - Menu changes from Blue to Red when scrolled
@@ -24,9 +42,7 @@ Create an interactive navigation menu that changes color or style when scrolled 
 - JavaScript
 
 ## 🚀 Live Demo
-[View Live Demo](https://chaithanya8861.github.io/PRODIGY_WD_01/)
-
-*(Enable GitHub Pages in Settings → Pages to make this link work)*
+[View Live Demo]([://YOUR-USERNAME.github.io/PRODIGY_WD_01](https://chaithanya8861.github.io/PRODIGY_WD_01/))
 
 ## 📱 How to Run Locally
 1. Download `index.html`
@@ -44,6 +60,3 @@ Create an interactive navigation menu that changes color or style when scrolled 
 ## 👨‍💻 Author
 **Chaithanya** - Web Development Intern  
 PRODIGY INFOTECH
-
----
-*Task completed as part of internship assignment*
