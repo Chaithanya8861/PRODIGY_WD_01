@@ -42,7 +42,7 @@ Create an interactive navigation menu that changes color or style when scrolled 
 | Hover | Yellow (#f1c40f) | Dark Blue |
 
 ## 👨‍💻 Author
-**Your Name** - Web Development Intern  
+**Chaithanya** - Web Development Intern  
 PRODIGY INFOTECH
 
 ---
