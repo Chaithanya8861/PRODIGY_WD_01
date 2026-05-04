@@ -24,7 +24,7 @@ Create an interactive navigation menu that changes color or style when scrolled 
 - JavaScript
 
 ## 🚀 Live Demo
-[View Live Demo](https://YOUR-USERNAME.github.io/PRODIGY_WD_01)
+[View Live Demo](https://chaithanya8861.github.io/PRODIGY_WD_01/)
 
 *(Enable GitHub Pages in Settings → Pages to make this link work)*
 
